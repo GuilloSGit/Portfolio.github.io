@@ -124,7 +124,7 @@ a {
 
 /*===== NAVBAR =====*/
 .nav {
-  height: 2.5rem;
+  height: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,10 +143,10 @@ a {
     display: inline-block;
     position: fixed;
     right: 0%;
-    top: -100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 60%;
-    height: 100%;
+    right: -100%;
+    background-color: rgba(93, 157, 231, 0.267);
+    width: 40%;
+    height: 50%;
     padding-top: 20px;
     text-align: center;
     z-index: var(--z-fixed);
@@ -160,7 +160,12 @@ a {
 }
 
 .nav__item {
+  font-size: larger;
   margin-bottom: 8px;
+}
+
+.nav__list :hover {
+  background-color: rgba(93, 157, 231, 0.87);
 }
 
 .nav__link {
@@ -168,14 +173,15 @@ a {
 }
 
 .nav__toggle {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   color: var(--white-color);
   cursor: pointer;
 }
 
 /*=== Show menu ===*/
 .show {
-  top: 2rem;
+  top: 4%;
+  right: 1%;
 }
 
 /*===== HOME =====*/

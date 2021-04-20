@@ -82,7 +82,7 @@
                 </div>
                 <div class="section">
                     <div class="section__data">
-                        <h2 class="section__title" id="contacto">Formulario</h2>
+                        <h2 class="section__title" id="contacto">Póngase en contacto conmigo</h2>
                         <div class="container" >
                             <form action="##">
                                 <div class="row">
@@ -176,9 +176,21 @@
                             toggle.addEventListener('click', () => {
                                 nav.classList.toggle('show')
                             })
-                        }
+                        } 
                     }
                     showMenu('nav-toggle', 'nav-menu')
+                    
+                    const hideMenu = (toggleId, navId) => {
+                        const toggle = document.getElementById(toggleId),
+                        nav = document.getElementById(navId)
+
+                        if(toggle || nav) {
+                            toggle.addEventListener('mouseleave', () => {
+                                nav.classList.remove('show')
+                            })
+                        }
+                    }
+                    hideMenu('nav-toggle', 'nav-menu')
         </script>
     </body>
 </html>
