@@ -17,7 +17,7 @@
 
 @media screen and (min-width: 750px) {
   :root {
-    --biggest-font-size: 5rem;
+    --biggest-font-size: 3rem;
     --h2-font-size: 1.5rem;
     --normal-font-size: 1rem;
   }
@@ -228,13 +228,13 @@ a {
 }
 
 .home__title {
-  top: 36%;
+  top: 25%;
   font-size: var(--biggest-font-size);
   z-index: var(--z-normal);
 }
 
 .home__subtitle {
-  top: 64%;
+  top: 70%;
   font-size: var(--h2-font-size);
   font-weight: bold;
   z-index: var(--z-tooltip);
