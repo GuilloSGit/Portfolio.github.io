@@ -228,13 +228,13 @@ a {
 }
 
 .home__title {
-  top: 25%;
+  top: 20%;
   font-size: var(--biggest-font-size);
   z-index: var(--z-normal);
 }
 
 .home__subtitle {
-  top: 70%;
+  top: 50%;
   font-size: var(--h2-font-size);
   font-weight: bold;
   z-index: var(--z-tooltip);
@@ -263,9 +263,8 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: auto;
   margin: 0;
-  padding: 20px;
+  padding: 40px;
   color: var(--white-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -335,55 +334,55 @@ a {
     flex-direction: column;
   }
   .home__title {
+    top: 20%;
     padding: 5%;
     font-size: 3rem;
   }
 
   .home__subtitle {
-    top: 55%;
+    top: 50%;
     font-size: 1.5rem;
   }
   .container {
-    width: 100%;
     padding: 2%;
   }
 }
 @media screen and (min-width: 460px) {
   .home__title {
+    top: 20%;
     padding: 5%;
     font-size: 3rem;
   }
 
   .home__subtitle {
-    top: 55%;
+    top: 50%;
     font-size: 1.5rem;
   }
   .container {
-    width: 100%;
     padding: 3%;
   }
 }
 @media screen and (min-width: 670px) {
   .home__title {
-    top: 30%;
+    top: 20%;
     padding: 5%;
     font-size: 3.4rem;
   }
 
   .home__subtitle {
-    top: 55%;
+    top: 50%;
     font-size: 2rem;
   }
 }
 @media screen and (min-width: 750px) {
   .home__title {
     padding: 5%;
-    top: 23%;
+    top: 20%;
     font-size: 5rem;
   }
 
   .home__subtitle {
-    top: 55%;
+    top: 50%;
     font-size: 3rem;
   }
   .nav {
@@ -418,12 +417,12 @@ a {
 @media screen and (min-width: 1200px) {
   .home__title {
     padding: 5%;
-    top: 23%;
+    top: 20%;
     font-size: 6rem;
   }
 
   .home__subtitle {
-    top: 55%;
+    top: 50%;
     font-size: 4rem;
   }
   .section {
@@ -441,18 +440,25 @@ a {
 
 /*===== FORMULARIO =====*/
 
-.form {
-  background-color: black;
+.container {
+  width: 100%;
+  color: #ccc;
+  border-radius: 5px;
+  background-color: #2e2d2d;
+  padding: 20px;
 }
 
 input[type="text"],
 select,
 textarea {
-  width: 100%;
+  width: 80%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+}
+textarea {
+  margin-bottom: 5%;
 }
 
 label {
@@ -473,15 +479,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #3b4b6e;
 }
-
-.container {
-  margin: 3%;
-  padding: 5%;
-  width: 80%;
-  color: #ccc;
-  border-radius: 5px;
-  background-color: #2e2d2d;
-  padding: 20px;
+textarea ::selection {
+  background-color: darkgray;
 }
 
 .col-25 {
@@ -503,7 +502,10 @@ input[type="submit"]:hover {
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - when the screen is less than 600px wide,
+/ make the two columns stack on top of each other
+/ instead of next to each other */
+
 @media screen and (max-width: 600px) {
   .col-25,
   .col-75,

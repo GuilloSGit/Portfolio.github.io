@@ -68,22 +68,22 @@
                     <div class="section__data">
                         <h2 class="section__title" id="section">Mis redes sociales</h2>
                         <div class="card-container">
-                        <div class="social sololearn" id="social">
-                            <a href="https://www.sololearn.com/profile/5238708" class="sqa"><img src="../assets/sololearn.svg" class="social__img"></img>Sololearn</a>
+                            <div class="social sololearn" id="social">
+                                <a href="https://www.sololearn.com/profile/5238708" class="sqa"><img src="assets/sololearn.svg" class="social__img"></img>Sololearn</a>
                             </div>
                             <div class="social codepen" id="social">
-                                    <a href="https://codepen.io/guillosgit" class="sqa"><img src="../assets/codepen.svg" class="social__img"></img>CodePen</a>
+                                <a href="https://codepen.io/guillosgit" class="sqa"><img src="assets/codepen.svg" class="social__img"></img>CodePen</a>
                             </div>
                             <div class="social codepen" id="social">
-                                <a href="https://github.com/GuilloSGit" class="sqa"><img src="../assets/github.svg" class="social__img"></img>GitHub</a>
+                                <a href="https://github.com/GuilloSGit" class="sqa"><img src="assets/github.svg" class="social__img"></img>GitHub</a>
                             </div>
-                        </div>
                         </div>
                     </div>
-                    <!-- ===== CONTACTO ===== -->
-                    <div class="section">
-                        <h2 class="section__title">Formulario</h2>
-                        <div class="container" id="contacto">
+                </div>
+                <div class="section">
+                    <div class="section__data">
+                        <h2 class="section__title" id="contacto">Formulario</h2>
+                        <div class="container" >
                             <form action="##">
                                 <div class="row">
                                     <div class="col-25">
@@ -118,21 +118,23 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-25">
-                                        <label for="subject">Mensaje</label>
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="subject">Mensaje</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <textarea id="subject" name="subject" placeholder="Escriba su mensaje.." style="height:200px" autocomplete="off"></textarea>
+                                        </div>
                                     </div>
-                                    <div class="col-75">
-                                        <textarea id="subject" name="subject" placeholder="Escriba su mensaje.." style="height:200px" autocomplete="off"></textarea>
+                                    <div class="row">
+                                        <input type="submit" value="Submit">
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <div class="row">
-                            <input type="submit" value="Submit">
-                        </div>
-                    </form>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </main>
         <script>
             /*====== RELLAX =====*/
