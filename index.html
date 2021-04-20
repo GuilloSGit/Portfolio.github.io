@@ -27,11 +27,12 @@
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
+                    <ul class="nav__list" id="nav-list">
                         <li class="nav__item"><a href="#home" class="nav__link">Inicio</a></li>
                         <li class="nav__item"><a href="#section" class="nav__link">Info</a></li>
                         <li class="nav__item"><a href="#section" class="nav__link">Sobre mí</a></li>
                         <li class="nav__item"><a href="#social" class="nav__link">Sociales</a></li>
+                        <li class="nav__item"><a href="#trabajos" class="nav__link">Trabajos</a></li>
                         <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
                     </ul>
                 </div>
@@ -78,6 +79,11 @@
                                 <a href="https://github.com/GuilloSGit" class="sqa"><img src="assets/github.svg" class="social__img"></img>GitHub</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section__data">
+                        <h2 class="section__title" id="trabajos">Trabajos</h2>
                     </div>
                 </div>
                 <div class="section">
@@ -181,11 +187,15 @@
                     showMenu('nav-toggle', 'nav-menu')
                     
                     const hideMenu = (toggleId, navId) => {
-                        const toggle = document.getElementById(toggleId),
+                        const toggle = document.getElementById(navId),
                         nav = document.getElementById(navId)
-
-                        if(toggle || nav) {
-                            toggle.addEventListener('mouseleave', () => {
+                        
+                        if(nav) {
+                            toggle.addEventListener('click', () => {
+                                nav.classList.remove('show')
+                            })
+                        } else {
+                            button.addEventListener('click', () => {
                                 nav.classList.remove('show')
                             })
                         }

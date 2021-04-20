@@ -47,6 +47,7 @@ html {
 body {
   margin: 0;
   font-family: var(--body-font);
+  background-color: black;
 }
 li {
   line-height: 45px;
@@ -144,7 +145,7 @@ a {
     position: fixed;
     right: 0%;
     right: -100%;
-    background-color: rgba(93, 157, 231, 0.267);
+    background-color: rgba(58, 100, 148, 0.685);
     width: 40%;
     height: 50%;
     padding-top: 20px;
@@ -269,7 +270,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 20px;
   padding: 40px;
   color: var(--white-color);
   display: -webkit-box;
@@ -288,6 +289,7 @@ a {
 }
 
 .section__data {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
