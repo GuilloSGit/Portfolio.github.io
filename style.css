@@ -1,5 +1,8 @@
 /*===== GOGGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Permanent+Marker&family=Satisfy&display=swap");
 
 :root {
   --first-color: #f1c490;
@@ -9,9 +12,9 @@
 
 /*=== Fuente y tipografia ===*/
 :root {
-  --body-font: "Open Sans", sans-serif;
-  --biggest-font-size: 3.5rem;
-  --h2-font-size: 1.25rem;
+  --body-font: "Orbitron";
+  --biggest-font-size: 4rem;
+  --h2-font-size: 2rem;
   --normal-font-size: 0.938rem;
 }
 
@@ -69,6 +72,11 @@ p {
   text-align: left;
 }
 
+hr {
+  border: none;
+  margin: 40px 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -79,7 +87,8 @@ a {
   color: var(--white-color);
   text-decoration: none;
 }
-.sqa {
+.sqa,
+.sqa2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -92,28 +101,25 @@ a {
   padding: 10px;
   border-radius: 15px;
   box-shadow: 4px 3px 12px rgb(8, 23, 41);
-}
-.sqa2 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 450px;
-  background-color: #353333;
-  margin: 25px;
-  margin-bottom: 45px;
-  padding: 10px;
-  border-radius: 15px;
-  box-shadow: 4px 3px 12px rgb(8, 23, 41);
+  text-decoration: none;
+  max-width: 170px;
+  min-height: 240px;
 }
 
 .social__img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   color: aliceblue;
   margin: 10px;
   padding: 10px;
+}
+
+.card-container-trabajos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .trabajos__img {
@@ -123,9 +129,26 @@ a {
   padding: 10px;
 }
 
+.sqa2,
 .sqa:hover {
   transform: scale(1.1, 1.1);
   box-shadow: 4px 3px 12px rgb(41, 66, 95);
+}
+
+/*===== FOOTER =====*/
+
+.parent {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+  color: aliceblue;
+  place-items: center;
+  text-align: center;
+  background-color: black;
+  line-height: 4rem;
+}
+
+.permanente {
+  grid-column: 1 / 4;
 }
 
 /*===== LAYOUT =====*/
@@ -146,7 +169,8 @@ a {
 
 /*===== NAVBAR =====*/
 .nav {
-  height: 3rem;
+  margin-top: 10px;
+  height: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,21 +183,20 @@ a {
   font-weight: bold;
   margin-right: 10px;
 }
-
 @media screen and (max-width: 750px) {
   .nav__menu {
-    display: inline-block;
     position: fixed;
     right: 0%;
     right: -100%;
-    background-color: rgba(58, 100, 148, 0.685);
+    background-color: rgba(79, 179, 219, 0.623);
     width: 40%;
     height: 50%;
-    padding-top: 20px;
+    margin-top: 1rem;
+    padding-top: 1rem;
     text-align: center;
     z-index: var(--z-fixed);
-    -webkit-transition: 0.8s;
-    transition: 0.5s;
+    -webkit-transition: 2s;
+    transition: 1s;
   }
 }
 
@@ -182,20 +205,23 @@ a {
 }
 
 .nav__item {
-  font-size: larger;
   margin-bottom: 8px;
 }
 
+.nav__list {
+  line-height: 3rem;
+}
 .nav__list :hover {
-  background-color: rgba(93, 157, 231, 0.87);
+  background-color: rgba(75, 219, 219, 0.712);
 }
 
 .nav__link {
   color: var(--white-color);
 }
 
+span,
 .nav__toggle {
-  font-size: 1.9rem;
+  font-size: 2rem;
   color: var(--white-color);
   cursor: pointer;
 }
@@ -306,7 +332,6 @@ a {
   justify-content: space-evenly;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: left;
 }
 
 .section__data {
@@ -352,12 +377,10 @@ a {
     flex-direction: column;
     align-items: initial;
   }
-  .sqa {
+  .sqa,
+  sqa2 {
     margin: 0;
     margin-bottom: 20px;
-  }
-
-  .sqa2 {
     min-width: 180px;
   }
 
@@ -471,14 +494,11 @@ a {
     margin-right: auto;
   }
 }
-.sqa {
-  text-decoration: none;
-}
 
 /*===== FORMULARIO =====*/
 
 .container {
-  width: 100%;
+  width: 85%;
   color: #ccc;
   border-radius: 5px;
   background-color: #2e2d2d;

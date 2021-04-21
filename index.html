@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
-        <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         <!-- GSAP -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
         <!-- SCROLL REVEAL -->
@@ -23,7 +22,7 @@
                 <a href="#section" class="nav__logo"></a>
 
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu-alt-right'>Menú</i>
+                    <i class='bx bx-menu-alt-right'></i><span>Menú</span>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -31,7 +30,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link">Inicio</a></li>
                         <li class="nav__item"><a href="#section" class="nav__link">Info</a></li>
                         <li class="nav__item"><a href="#section" class="nav__link">Sobre mí</a></li>
-                        <li class="nav__item"><a href="#social" class="nav__link">Sociales</a></li>
+                        <li class="nav__item"><a href="#social" class="nav__link">Redes</a></li>
                         <li class="nav__item"><a href="#trabajos" class="nav__link">Trabajos</a></li>
                         <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
                     </ul>
@@ -52,24 +51,26 @@
             </div>
 
             <!-- ===== SECTION =====-->
+            <hr class="division">
             <section class="l-section">
                 <div class="section">
                     <div class="section__data">
                         <h2 class="section__title" id="section">Sobre mí</h2>
                         <div class="text-section">
-                        <p class="section__text">Me llamo Guillermo. Vivo en Argentina, Provincia de Salta, Tartagal.</p>
-                        <p class="section__text">Aunque nací en San Juan, me mudé al norte hacen ya más de 3 años y me enamoré de esta tierra, sus lugares, su gente, su cultura.</p>
-                        <p class="section__text">Me apasionan las computadoras, y hace cerca de 1 año, decidí empezar el camino de aprendizaje de la programación con lenguajes como HTML, CSS, Javascript y otros.</p>
-                        <p class="section__text">Siempre me gustó la música, los idiomas y las buenas conversaciones.</p>
-                        <p class="section__text">Me gusta la música melódica</p>
-                    </div>
+                            <p class="section__text">Me llamo Guillermo. Vivo en Argentina, Provincia de Salta, Tartagal.</p>
+                            <p class="section__text">Aunque nací en San Juan, me mudé al norte hacen ya más de 3 años y me enamoré de esta tierra, sus lugares, su gente, su cultura.</p>
+                            <p class="section__text">Me apasionan las computadoras, y hace cerca de 1 año, decidí empezar el camino de aprendizaje de la programación con lenguajes como HTML, CSS, Javascript y otros.</p>
+                            <p class="section__text">Siempre me gustó la música, los idiomas y las buenas conversaciones.</p>
+                            <p class="section__text">Me gusta la música melódica</p>
+                        </div>
                     </div>
                 </div>
+                <hr class="division"  id="social">
                 <div class="section">
                     <div class="section__data">
-                        <h2 class="section__title" id="section">Mis redes sociales</h2>
+                        <h2 class="section__title" id="section">Yo en las redes</h2>
                         <div class="card-container">
-                            <div class="social sololearn" id="social">
+                            <div class="social sololearn">
                                 <a href="https://www.sololearn.com/profile/5238708" class="sqa"><img src="assets/sololearn.svg" class="social__img"></img>Sololearn</a>
                             </div>
                             <div class="social codepen" id="social">
@@ -81,25 +82,27 @@
                         </div>
                     </div>
                 </div>
+                <hr class="division" id="trabajos">
                 <div class="section">
                     <div class="section__data">
-                        <h2 class="section__title" id="trabajos">Trabajos</h2>
-                    </div>
-                    <div class="card-container">
-                        <div class="trabajos" id="trabajo1">
-                            <a href="https://github.com/GuilloSGit" class="sqa2"> <img src="assets/2 manos.png" class="trabajos__img" alt="Clases de Lengua de Señas en línea" >Clases en Línea</a>
-                        </div>
-                        <div class="trabajos" id="trabajo1">
-                            <a href="https://github.com/GuilloSGit" class="sqa2"> <img src="assets/2 manos.png" class="trabajos__img" alt="plataforma para estudiantes" >Plataforma para estudiantes</a>
-                        </div>
-                        <div class="trabajos" id="trabajo1">
-                            <a href="https://github.com/GuilloSGit" class="sqa2"> <img src="assets/Logo Muni Aguaray - nuevo.jpeg" class="trabajos__img" alt="colaboración con la Municipalidad de Aguaray" >Colaboración con la Municipalidad de Aguaray</a>
+                        <h2 class="section__title" id="section">Trabajos</h2>
+                        <div class="card-container-trabajos">
+                            <div class="trabajos" id="trabajo1">
+                                <a href="https://claseslsa.blogspot.com/2020/08/clases-de-lsa-zoom.html" class="sqa2"> <img src="assets/2 manos.png" class="trabajos__img" alt="Clases de Lengua de Señas en línea">Clases en Línea</a>
+                            </div>
+                            <div class="trabajos" id="trabajo2">
+                                <a href="http://cursolsa.ml/" class="sqa2"> <img src="assets/2 manos.png" class="trabajos__img" alt="plataforma para estudiantes">Plataforma para estudiantes</a>
+                            </div>
+                            <div class="trabajos" id="trabajo3">
+                                <a href="http://aguaray.gob.ar/" class="sqa2"> <img src="assets/Logo Muni Aguaray - nuevo.jpeg" class="trabajos__img" alt="colaboración con la Municipalidad de Aguaray">Colaboración con la Municipalidad de Aguaray</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <hr class="division" id="contacto">
                 <div class="section">
                     <div class="section__data">
-                        <h2 class="section__title" id="contacto">Póngase en contacto conmigo</h2>
+                        <h2 class="section__title" >Póngase en contacto conmigo</h2>
                         <div class="container" >
                             <form action="##">
                                 <div class="row">
@@ -153,6 +156,9 @@
                 </div>
             </section>
         </main>
+        <div class="parent">
+            <footer class="permanente" contenteditable>Guillermo Andrada - WebDes - 2021</footer>
+        </div> 
         <script>
             /*====== RELLAX =====*/
                 var rellax = new Rellax('.parallax');
@@ -160,10 +166,10 @@
 
                 /*====== ANIMATE GSAP ======*/
                 /*Navbar*/
-                gsap.from('.nav__logo', { opacity: 0, duration: 3, delay: .5, y: 30, ease: 'expo.out' });
+/*                 gsap.from('.nav__logo', { opacity: 0, duration: 3, delay: .5, y: 30, ease: 'expo.out' });
                 gsap.from('.nav__toggle', { opacity: 0, duration: 3, delay: .7, y: 30, ease: 'expo.out' });
                 gsap.from('.nav__item', { opacity: 0, duration: 3, delay: .7, y: 35, ease: 'expo.out', stagger: .2 })
-
+ */
                 /*Text*/
                 gsap.from('.home__title', { opacity: 0, duration: 3, delay: 1.3, y: 35, ease: 'expo.out' });
                 gsap.from('.home__subtitle', { opacity: 0, duration: 3, delay: 1.1, y: 35, ease: 'expo.out' });
