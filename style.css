@@ -52,6 +52,28 @@ body {
   font-family: var(--body-font);
   background-color: black;
 }
+.image {
+  text-align: center;
+}
+.float {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: auto;
+}
+
 li {
   line-height: 45px;
   margin: 8px 0 0 0;
@@ -69,21 +91,18 @@ p {
   padding: 5px;
 }
 
-p {
-  min-width: 100px;
-}
-
 .section__title {
   text-align: left;
 }
 
 hr {
   border: none;
-  margin: 40px 0;
-  padding: 20px;
+  margin: 25px 0;
+  padding: 10px;
 }
 
 .text-section {
+  text-align: left;
   max-width: 800px;
 }
 
@@ -99,8 +118,8 @@ a {
 }
 
 .bonito {
-  margin: 20px 50px;
-  width: 250px;
+  margin: 10px 10px;
+  width: 150px;
 }
 
 .sqa,
@@ -395,7 +414,7 @@ span,
     align-items: initial;
   }
   .sqa,
-  sqa2 {
+  .sqa2 {
     margin: 0;
     margin-bottom: 20px;
     min-width: 180px;
@@ -487,7 +506,7 @@ span,
     margin-right: auto;
   }
   .section__text {
-    padding-right: 3rem;
+    padding-right: 2rem;
   }
 }
 
