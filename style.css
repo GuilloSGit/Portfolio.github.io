@@ -59,10 +59,10 @@ li {
 li:hover {
   transform: scaleX(1.5);
 }
+
 h1,
 h2,
-h3,
-p {
+h3 {
   text-align: center;
   margin: 20px;
   padding: 5px;
@@ -75,6 +75,11 @@ p {
 hr {
   border: none;
   margin: 40px 0;
+  padding: 20px;
+}
+
+.text-section {
+  max-width: 800px;
 }
 
 ul {
@@ -87,6 +92,14 @@ a {
   color: var(--white-color);
   text-decoration: none;
 }
+
+.bonito {
+  float: left;
+  margin: 5px 20px;
+  width: 250px;
+  max-height: 200px;
+}
+
 .sqa,
 .sqa2 {
   display: flex;
@@ -129,9 +142,10 @@ a {
   padding: 10px;
 }
 
-.sqa2,
+.sqa2:hover,
 .sqa:hover {
   transform: scale(1.1, 1.1);
+  background-color: #7d7d8393;
   box-shadow: 4px 3px 12px rgb(41, 66, 95);
 }
 
@@ -498,7 +512,9 @@ span,
 /*===== FORMULARIO =====*/
 
 .container {
-  width: 85%;
+  margin-left: 7%;
+  width: 95%;
+  max-width: 600px;
   color: #ccc;
   border-radius: 5px;
   background-color: #2e2d2d;
@@ -508,7 +524,8 @@ span,
 input[type="text"],
 select,
 textarea {
-  width: 80%;
+  font-family: "Orbitron";
+  width: 90%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -524,7 +541,8 @@ label {
 }
 
 input[type="submit"] {
-  background-color: #363772;
+  font-family: "Orbitron";
+  background-color: #06085c69;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -542,14 +560,19 @@ textarea ::selection {
 
 .col-25 {
   float: left;
-  width: 25%;
+  width: 15%;
   margin-top: 6px;
+  margin-right: 6px;
 }
 
 .col-75 {
   float: left;
-  width: 75%;
+  width: 85%;
   margin-top: 6px;
+}
+
+.button {
+  max-width: 80%;
 }
 
 /* Clear floats after the columns */
