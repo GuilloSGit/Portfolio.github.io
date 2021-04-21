@@ -59,8 +59,8 @@
                             <p class="section__text">Aunque nací en San Juan, me mudé al norte hacen ya más de 3 años y me enamoré de esta tierra, sus lugares, su gente, su cultura.</p><br>
                             <p><img class="bonito" src="assets/guille.jpg" alt="foto de Guillermo en actividades"></p>
                             <p class="section__text">Me apasionan las computadoras, y hace cerca de 1 año, decidí empezar el camino de aprendizaje de la programación con lenguajes como HTML, CSS, Javascript y otros.</p><br>
-                            <p class="section__text">Siempre me gustó la música, los idiomas y las buenas conversaciones.</p><br>
-                            <p class="section__text">Me gusta la música melódica</p>
+                            <p class="section__text">Siempre me gustaron la música melódica, los idiomas y las buenas conversaciones.</p><br>
+                            <p class="section__text">Lo que más leo, está referido a crecimiento personal, autoestima y fuerza de voluntad. Estas lecturas me ayudan a sentirme seguro y a respetar las particularidades de los demás.</p>
                         </div>
                     </div>
                 </div>
@@ -168,7 +168,7 @@
             </a>
             
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-            <a href="#home" class="float inicio">
+            <a href="#nav-toggle" class="float inicio">
                 <i class='bx bx-menu-alt-right'></i>
                 </a>
             </div>
@@ -235,6 +235,9 @@
                         }
                     }
                     hideMenu('nav-toggle', 'nav-menu')
+
+                    const nav = document.getElementById('nav-menu')
+                        nav.addEventListener('mouseleave', function () { nav.classList.remove('show') })
         </script>
     </body>
 </html>
