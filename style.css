@@ -148,7 +148,7 @@ a {
   margin-bottom: 45px;
   padding: 10px;
   border-radius: 15px;
-  box-shadow: 4px 3px 12px rgb(8, 23, 41);
+  box-shadow: 4px 3px 12px rgb(11, 10, 44);
   text-decoration: none;
   max-width: 170px;
   min-height: 240px;
@@ -171,6 +171,8 @@ a {
 }
 
 .trabajos__img {
+  border-style: none;
+  border-radius: 15%;
   width: 150px;
   color: aliceblue;
   margin: 10px;
