@@ -52,15 +52,13 @@ body {
   font-family: var(--body-font);
   background-color: black;
 }
-.image {
-  text-align: center;
-}
+
 .float {
   position: fixed;
-  width: 40px;
-  height: 40px;
-  bottom: 40px;
-  right: 40px;
+  width: 45px;
+  height: 45px;
+  bottom: 20px;
+  right: 20px;
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;
@@ -71,7 +69,16 @@ body {
 }
 
 .my-float {
-  margin-top: auto;
+  margin-top: 8px;
+}
+
+.bx {
+  margin-top: 8px;
+}
+
+.inicio {
+  background-color: #323232;
+  bottom: 80px;
 }
 
 li {
@@ -420,9 +427,6 @@ span,
     min-width: 180px;
   }
 
-  .social {
-    width: 250px;
-  }
   .card-container {
     flex-direction: column;
   }
