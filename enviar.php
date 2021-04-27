@@ -9,16 +9,13 @@ $subject = $_POST['subject'];
 
 // Datos para el correo
 $destinatario = "guillermoandrada@gmail.com";
-$asunto = "Contacto desde mi Web";
+$asunto = "Contacto desde g-andrada.ga";
 
-$carta = "De: $fname\n";
-$carta = "De: $lname\n";
-$carta = "Correo: $email\n";
-$carta = "Mensaje: $subject\n";
+$carta = "De: $lname, $fname\n Correo: $email\n Desde: $country\n Mensaje $subject\n";
 
 
 // Enviando mensaje
 mail($destinatario, $asunto, $carta);
-header('Location:mensaje-de-envio.html');
+header('Location:index.html');
 
 ?>
