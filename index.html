@@ -109,13 +109,13 @@
                     <div class="section__data">
                         <h2 class="section__title" >Póngase en contacto conmigo</h2>
                         <div class="container" >
-                            <form action="##">
+                            <form action="enviar.php" method="post">
                                 <div class="row">
                                     <div class="col-25">
                                         <label for="fname">Nombre</label>
                                     </div>
                                     <div class="col-75">
-                                        <input type="text" id="fname" name="firstname" placeholder="Su nombre.." autocomplete="off">
+                                        <input type="text" id="fname" name="firstname" placeholder="Su nombre.." autocomplete="off" required>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -123,7 +123,15 @@
                                         <label for="lname">Apellido</label>
                                     </div>
                                     <div class="col-75">
-                                        <input type="text" id="lname" name="lastname" placeholder="Su apellido.." autocapitalize="words" autocomplete="off">
+                                        <input type="text" id="lname" name="lastname" placeholder="Su apellido.." autocapitalize="words" autocomplete="off" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="email">E-Mail</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="email" id="correo" name="email" placeholder="email@email.com" autocomplete="off" required>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -152,7 +160,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <input type="submit" class="button" value="Submit">
+                                        <input type="submit" class="button" value="Enviar">
                                     </div>
                                 </form>
                             </div>

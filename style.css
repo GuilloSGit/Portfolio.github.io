@@ -557,6 +557,7 @@ span,
 }
 
 input[type="text"],
+input[type="email"],
 select,
 textarea {
   font-family: "Orbitron";
