@@ -11,7 +11,7 @@ $subject = $_POST['subject'];
 $destinatario = "guillermoandrada@gmail.com";
 $asunto = "Contacto desde g-andrada.ga";
 
-$carta = "De: $lname, $fname\n Correo: $email\n Desde: $country\n Mensaje $subject\n";
+$carta = `De: $lname, $fname\n Correo: $email\n Desde: $country\n Mensaje $subject\n`;
 
 
 // Enviando mensaje
